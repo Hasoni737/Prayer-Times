@@ -6,5 +6,4 @@
 
 يهدف الموقع إلى مساعدة المسلمين على أداء الصلاة في وقتها، وتسهيل معرفة أوقات الصلاة في أي مكان في العالم.
 
-![صلاتك](https://drive.google.com/file/d/1lt0KmR_2XG4H3UcgQ_dTPAYkVk4ttubd/view?usp=sharing)
 ### Site : https://salatok.netlify.app
