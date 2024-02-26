@@ -1,0 +1,205 @@
+* {
+  font-family: "Tajawal", sans-serif;
+}
+
+/* Navbar */
+.navbar-brand img {
+  width: 40px;
+  margin-left: 5px;
+}
+.navbar {
+  box-shadow: 0 4px 10px #777;
+  direction: rtl;
+  font-weight: 600;
+}
+/*// Navbar //*/
+.content {
+  direction: rtl;
+  padding: 50px 0;
+  margin-top: -20px;
+}
+@media (max-width: 992px) {
+  .content {
+    width: 95%;
+  }
+}
+/* Payer times with icons */
+.times-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .times-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .times-icons {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.time-icon {
+  padding: 5px;
+  display: flex;
+  background-color: #eee;
+  border-radius: 7px;
+}
+@media (max-width: 767px) {
+  .times-icons {
+    gap: 10px;
+  }
+  .time-icon {
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+.time-icon .image {
+  width: 50%;
+}
+.time-icon .image img {
+  width: 100%;
+}
+.time-icon .text {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.time-icon .text .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.time-icon .text .time {
+  font-weight: 500;
+  color: #333;
+  font-size: 20px;
+}
+/*// Payer times with icons //*/
+
+/* Country and date */
+#country {
+  font-size: 16px;
+  font-weight: 500;
+}
+.country-and-date {
+  display: flex;
+  flex-direction: column;
+}
+.country-select {
+  margin-bottom: 10px;
+  margin-top: 7px;
+  width: 260px;
+}
+@media (max-width: 768px) {
+  .country-select {
+    width: 170px;
+  }
+}
+.country-select option {
+  font-size: 18px;
+  font-weight: 500;
+}
+.country #label-country,
+.country-and-date #label-date {
+  font-size: 20px;
+  font-weight: 600;
+}
+.country-and-date #label-date {
+  margin-bottom: 5px;
+}
+.country-and-date #date-today {
+  font-size: 18px;
+  font-weight: 500;
+}
+.country-and-date #label-city {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.country-and-date #city-input {
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  max-width: 190px;
+}
+.country-and-date #city-option {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/*// Country and date //*/
+
+/* Date month */
+#btn-show-PTM {
+  background-color: #f8ab21;
+  color: #eee;
+  font-weight: 600;
+  padding: 3px 6px;
+}
+/*// Date month //*/
+
+/* Table */
+.table-container {
+  margin-top: 30px;
+}
+.table-container #title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.table thead tr th {
+  background-color: #f8ab21;
+}
+.table tbody tr td {
+  font-weight: 500;
+}
+.table tbody span {
+  margin-left: 2px;
+  font-size: 14px;
+  color: #333;
+}
+.table-container #label-date {
+  font-size: 20px;
+  font-weight: 600;
+}
+.table-container #input-date {
+  background-color: #eee;
+  padding: 5px 8px;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 8px;
+}
+::-webkit-calendar-picker-indicator {
+  background-color: #f8ad21c6;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+@media (max-width: 767px) {
+  .table thead tr th,
+  .table tbody tr td,
+  .table tbody tr th {
+    padding: 3px 0;
+  }
+  .table,
+  .table tbody span {
+    font-size: 10px;
+  }
+}
+/*// Table //*/
+
+/* Footer */
+.footer {
+  background-color: #212529;
+}
+.footer .container {
+  text-align: center;
+}
+/*// Footer //*/

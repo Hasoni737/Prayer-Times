@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صــلاتــــك</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <link rel="icon" href="images/icon.png" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Cabin:wght@600&family=Cairo:wght@300;400;700&family=Geologica:wght@300&family=Inter:wght@400;600&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Nunito:wght@200;300;400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Playpen+Sans:wght@600&family=Poppins:wght@200;400;500;600;700;800;900&family=Prompt&family=Roboto:wght@300;400;500;700;900&family=Tajawal:wght@300;400;500;700;800;900&family=Ubuntu:wght@500&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main style -->
+    <link rel="stylesheet" href="css/prayer times.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icon.png" alt="" />
+          صلاتك
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >أوقات الصلاة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">عــنــــــا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--// Navbar //-->
+
+    <!-- Main Container -->
+    <div class="container content">
+
+      <!-- Country and City and date -->
+      <div class="country-and-date">
+        <div class="country">
+          <label id="label-country" for="country">الدولة</label>
+          <select
+            id="country"
+            class="country-select form-select form-select-sm"
+            aria-label="Small select example"
+            onchange="selectCountryOnChange()"
+          >
+            <option value="المغرب" selected>المغرب</option>
+            <option value="الجزائر">الجزائر</option>
+            <option value="البحرين">البحرين</option>
+            <option value="كندا">كندا</option>
+            <option value="مصر">مصر</option>
+            <option value="إندونيسيا">إندونيسيا</option>
+            <option value="إيران">إيران</option>
+            <option value="العراق">العراق</option>
+            <option value="فلسطين">فلسطين</option>
+            <option value="إيطاليا">إيطاليا</option>
+            <option value="الأردن">الأردن</option>
+            <option value="الكويت">الكويت</option>
+            <option value="لبنان">لبنان</option>
+            <option value="ليبيا">ليبيا</option>
+            <option value="موريتانيا">موريتانيا</option>
+            <option value="هولندا">هولندا</option>
+            <option value="بولندا">بولندا</option>
+            <option value="البرتغال">البرتغال</option>
+            <option value="قطر">قطر</option>
+            <option value="روسيا">روسيا</option>
+            <option value="السعودية">السعودية</option>
+            <option value="إسبانيا">إسبانيا</option>
+            <option value="سويسرا">سويسرا</option>
+            <option value="سوريا">سوريا</option>
+            <option value="تونس">تونس</option>
+            <option value="تركيا">تركيا</option>
+            <option value="الإمارات العربية المتحدة">
+              الإمارات العربية المتحدة
+            </option>
+            <option value="الولايات المتحدة">الولايات المتحدة</option>
+            <option value="اليمن">اليمن</option>
+          </select>
+        </div>
+        <!-- <div class="city">
+          <label id="label-city" for="city-input">المدينة</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="city-option">إختياري</span>
+            <input
+              type="text"
+              class="form-control"
+              id="city-input"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              placeholder="اكتب اسم المدينة صحيحًا"
+            />
+          </div>
+        </div> -->
+        <div class="date">
+          <label id="label-date" for="date">تاريخ اليوم</label>
+          <p id="date-today">السبت, فبراير 25, 2024</p>
+        </div>
+      </div>
+      <!--// Country and City and date //-->
+
+      <!-- Section prayer times and icons-->
+      <div class="times-icons">
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/fajr.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">الفجر</div>
+            <div class="time" id="fajr">00:00</div>
+          </div>
+        </div>
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/sunrise.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">الشروق</div>
+            <div class="time" id="sunrise">00:00</div>
+          </div>
+        </div>
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/dhuhr.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">الظهر</div>
+            <div class="time" id="dhuhr">00:00</div>
+          </div>
+        </div>
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/asr.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">العصر</div>
+            <div class="time" id="asr">00:00</div>
+          </div>
+        </div>
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/maghreb.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">المغرب</div>
+            <div class="time" id="maghrib">00:00</div>
+          </div>
+        </div>
+        <div class="time-icon">
+          <div class="image">
+            <img src="images/isha.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="name">العشاء</div>
+            <div class="time" id="isha">00:00</div>
+          </div>
+        </div>
+      </div>
+      <!--// Section prayer times and icons //-->
+
+      <!-- Table -->
+      <div class="table-container">
+        <h3 id="title">أوقات الصلاة للشهر</h3>
+        <div class="date-month">
+          <label id="label-date" for="input-date">التاريخ</label>
+          <input
+            type="month"
+            name=""
+            id="input-date"
+            onchange="OnChangeDateInput()"
+          />
+        </div>
+        <table class="table table-striped text-center">
+          <thead>
+            <tr>
+              <th scope="col">الأيام</th>
+              <th scope="col" id="title-month">فبراير</th>
+              <th scope="col">الفجر</th>
+              <th scope="col">الشروق</th>
+              <th scope="col">الظهر</th>
+              <th scope="col">العصر</th>
+              <th scope="col">المغرب</th>
+              <th scope="col">العشاء</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!--// Table //-->
+    </div>
+    <!--// Main Container //-->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container p-3 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!--    
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a> -->
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-2"
+        style="background-color: rgba(0, 0, 0, 0.2); color: #fff"
+      >
+        © 2024 Copyright: Hasoni
+      </div>
+    </div>
+    <!--// Footer //-->
+
+    <!-- Files JavaScipt -->
+    <!-- Axios -->
+    <script src="Axios/node_modules/axios/dist/axios.js"></script>
+    <script src="JS/prayer times.js"></script>
+    <!-- Bootstrap JavaScipt -->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
