@@ -22,7 +22,7 @@ window.onload = function () {
 
 // Get prayer times today
 function getPrayerTimesToday(country, year, mounth) {
-  let url = `http://api.aladhan.com/v1/calendarByAddress/${year}/${mounth}?address=${country}&method=2`;
+  let url = `https://api.aladhan.com/v1/calendarByAddress/${year}/${mounth}?address=${country}&method=2`;
   axios
     .get(url)
     .then((response) => {
@@ -135,7 +135,7 @@ function getPrayerTimesMonth(country, year, month) {
   // Make it empty
   tbody.innerHTML = "";
 
-  let url = `http://api.aladhan.com/v1/calendarByAddress/${year}/${month}?address=${country}&method=2`;
+  let url = `https://api.aladhan.com/v1/calendarByAddress/${year}/${month}?address=${country}&method=2`;
   axios
     .get(url)
     .then((response) => {
